@@ -4,6 +4,7 @@ WORKDIR /opt/app
 COPY . .
 
 RUN npm install
+RUN npm install nodemon -g
 
 ## Installing  pdftk
 #RUN apt-get update && \
