@@ -2,6 +2,9 @@ FROM node:10.14.2
 
 WORKDIR /opt/app
 COPY . .
+
+RUN npm install
+
 ## Installing  pdftk
 #RUN apt-get update && \
 #    apt-get install -y pdftk && \
