@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/ystos-dev/node-course#readme",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "yargs": "^4.7.1",
+    "yarn": "^1.12.3"
   }
 }
