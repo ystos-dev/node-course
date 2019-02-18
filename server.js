@@ -24,12 +24,12 @@ app.set('view engine', 'hbs');
 
 app.use(express.static(__dirname + '/public'));
 
-app.use((req, resp, next) => {
-    resp.render('maitanance.hbs', {
-        pageTitle: 'Under the maitanance',
-        welcomeMessage: "Please, wait for a while"
-    })
-});
+// app.use((req, resp, next) => {
+//     resp.render('maitanance.hbs', {
+//         pageTitle: 'Under the maitanance',
+//         welcomeMessage: "Please, wait for a while"
+//     })
+// });
 
 app.get('/', (request, response) => {
     response.render('home.hbs', {
@@ -49,5 +49,11 @@ app.get('/bad', (request, response) => {
         error: "Error handling request"
     });
 })
+
+app.get('/projects', (req, resp) => {
+    resp.render('projects.hbs', {
+        pageTitle: 'Projects'
+    });
+});
 
 app.listen(port);
