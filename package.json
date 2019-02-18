@@ -2,7 +2,7 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,9 +17,8 @@
   },
   "homepage": "https://github.com/ystos-dev/node-course#readme",
   "dependencies": {
-    "lodash": "^4.17.11",
-    "request": "^2.88.0",
-    "yargs": "^4.7.1",
-    "yarn": "^1.12.3"
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "hbs": "^4.0.1"
   }
 }
